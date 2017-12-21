@@ -1,0 +1,132 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+section {
+    /*min-height: 100vh;*/    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 30px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+/*	display:block;*/
+}
+
+h1 {
+	padding-bottom: 10px;
+	text-align: center;
+    font-size: 3rem;
+	font-weight:bold;
+	
+}
+h2 {
+	padding-bottom: 10px;
+	text-align: left;
+    font-size: 3rem;
+	font-weight:bold;	
+}
+
+h3 {
+	padding-bottom: 10px;
+/*	padding-left: 23%;*/
+	text-align: left;
+    font-size: 1rem;
+	font-weight:bold;	
+}S
+
+
+#s2 {
+/*    background-color: #fff;  Колір фону для секцій #s2, #s4 */
+/*    background-image: url("../img/sex.jpg");*/
+/*    background-size: cover,*/
+}
+
+a {
+    color: #000;  /* Колір текстових лінків */
+}
+
+#s2 p {
+	text-align: justify;
+	font-size: 14px;
+	letter-spacing: 3px;
+	word-spacing: 7px;
+	text-transform:lowercase;
+}
+
+#s3 {
+	 padding: 70px 0;
+}
+#s4 {
+	margin: auto;
+	position: absolute;
+    left: 50%;
+	margin-left: -8%;
+}
+
+#s4 a {
+	
+}
+#s4 a:hover {
+	text-decoration: line-through;
+	color: black;
+	text-decoration-color: black;
+}
+
+#s4 a:focus{
+	text-decoration: line-through;
+}
+
+
+a:focus,
+a:hover {
+    color: #c00;  /* Колір текстових лінків для псевдокласів */
+}
+
+#s {
+	min-width: 100vh;
+}
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 10px;    /* Для Small додати відступи */
+        padding-right: 10px;   /* зліва та справа у .container та .navbar */
+    }
+
+	#s3,
+	.gallery .row > div{
+		
+	}
+	#s4 {
+		margin-left: -30%;
+	}
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+   
+}
+
+@media screen and (max-width:767px) {
+
+	
+	}
